@@ -1,0 +1,34 @@
+[settings]
+    arch=x86_64
+    build_type=Release
+    compiler=gcc
+    compiler.libcxx=libstdc++
+    compiler.version=4.9
+    os=Linux
+
+[requires]
+    libtool/2.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    build_type=Release
+    compiler=gcc
+    compiler.libcxx=libstdc++
+    compiler.version=4.9
+    os=Linux
+
+[full_requires]
+    libtool/2.4.6@sztomi/testing:b7111394de6b073036ada4e86b936981bf6a9814
+    m4/latest@sztomi/testing:75afd4a5a43dc297f65bd5338e9887b268cb97ba
+
+[full_options]
+
+
+[scope]
+    dev=True
+
+[recipe_hash]
+None

@@ -1,0 +1,5 @@
+[requires]
+libtool/2.4.6@sztomi/testing
+
+[generators]
+virtualenv
