@@ -22,10 +22,10 @@ class LibToolConan(ConanFile):
         tools.download(tarball_url, tgz)
         tools.untargz(tgz)
         os.unlink(tgz)
-        self.dirname = glob('libtool-*')[0]
 
     def build(self):
-        os.chdir(self.dirname)        
+        self.dirname = glob('libtool-*')[0]
+        os.chdir(self.dirname)
         self.run('. ../activate.sh && ./configure --prefix={}'.format(self.package_folder))
         self.run('make')
         self.run('make install')
@@ -35,4 +35,4 @@ class LibToolConan(ConanFile):
 
     def package_info(self):
         self.env_info.path.append(os.path.join(self.package_folder, 'bin'))
-        
+
